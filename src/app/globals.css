@@ -1,0 +1,69 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 48 33% 94%; /* A very light, warm beige */
+    --foreground: 84 14% 25%;
+    --card: 0 0% 100%;
+    --card-foreground: 84 14% 25%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 84 14% 25%;
+    --primary: 95 44% 45%; /* A strong, vibrant green */
+    --primary-foreground: 60 100% 98%;
+    --secondary: 95 30% 92%; /* A very light green for secondary backgrounds */
+    --secondary-foreground: 95 22% 29%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 45 85% 55%; /* A sunny, golden yellow */
+    --accent-foreground: 45 100% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 95 20% 85%; /* A soft green-gray border */
+    --input: 95 20% 85%;
+    --ring: 95 44% 45%;
+    --chart-1: 95 44% 45%;
+    --chart-2: 45 85% 55%;
+    --chart-3: 215.3 84.5% 38.2%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 84 14% 10%;
+    --foreground: 60 100% 98%;
+    --card: 84 14% 10%;
+    --card-foreground: 60 100% 98%;
+    --primary: 95 44% 55%; /* Lighter green for dark mode */
+    --primary-foreground: 60 100% 98%;
+    --secondary: 84 14% 15%;
+    --secondary-foreground: 60 100% 98%;
+    --muted: 84 14% 15%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+    --accent: 45 85% 55%;
+    --accent-foreground: 45 100% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 84 14% 20%;
+    --input: 84 14% 20%;
+    --ring: 95 44% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

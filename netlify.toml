@@ -1,0 +1,18 @@
+# This file configures the build and deployment settings for Netlify.
+# By specifying these settings, we ensure Netlify correctly handles this Next.js project.
+
+[build]
+  # This is the command Netlify will run to build your site.
+  command = "npm run build"
+  
+  # This is the directory that contains the built site. For Next.js, it's always ".next".
+  publish = ".next"
+
+[build.environment]
+  # Set the Node.js version to be compatible with the project.
+  NODE_VERSION = "20"
+
+[[plugins]]
+  # This official Netlify plugin automatically handles Next.js specific configurations,
+  # like redirects, serverless functions, and image optimization.
+  package = "@netlify/plugin-nextjs"
